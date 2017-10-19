@@ -81,6 +81,7 @@ const getSheetFromColorMap = map => ({
   },
 
   actionListRows: {
+    height: 'calc(100% - 27px)',
     overflow: 'auto',
 
     '& div.gu-transit': {
@@ -218,7 +219,10 @@ const getSheetFromColorMap = map => ({
 
   actionPreviewContent: {
     flex: 1,
-    'overflow-y': 'auto'
+    'overflow-y': 'auto',
+    '&>div>:last-child': {
+      'max-height': 'calc(100% - 77px)',
+    },
   },
 
   stateDiff: {
